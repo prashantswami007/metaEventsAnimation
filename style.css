@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+    color: #2C3E50;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #ECF0F1;
+}
+#page3 {
+    height:100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#text {
+    height: 15%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 4vw;
+}
+#text h2 {
+    font-size: 3vw ;
+    line-height: 8.5vw;
+}
+#boxes {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    padding: 2vw 4vw;
+    flex-wrap: nowrap;
+}
+.box {
+    width: 25%;
+    height: 100%;
+    padding: 0.5vw 1vw;
+    transition: linear 0.2s;
+    position: relative;
+}
+.imgContainer {
+    height: 100%;
+    width: 100%;
+
+}
+.text {
+    height: 40%;
+    width: 84%;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    display: flex;
+    gap: 1vw;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    background-color: #ecf0f17b;
+    display: none;
+    z-index: 3;
+    transition: all 0.2s linear;
+    padding: 1vw;
+}
+.textPart1 {
+    text-align: start;
+}
+.textPart2{
+    transition: all 1s linear;
+}
+.textPart2 h4 {
+    font-size: 1.2vw;
+}
+.textPart3 {
+    margin-top: 2vw;
+    margin-right: 25vw;
+    background-color: burlywood;
+    padding: 0.7vw 2vw;
+    /* transition: all 0.5s ease; */
+    opacity: 0;
+}
+#box1 .textPart3 {
+    opacity: 1;
+}
+.textPart1 h2{
+    font-size: 3vw;
+}
+.piche h2 {
+    font-size: 3vw;
+    position: absolute;
+    z-index: 0;
+    top: 70%;
+    left: 10%;
+    background-color: #ecf0f17b;
+}
+.piche {
+    display: none;
+}
+#box2 .piche {
+    display: block;
+}
+#box3 .piche {
+    display: block;
+}
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+#box1 {
+   width: 50%;
+}
+#box1 .text{
+    display: block;
+}
+.text {
+    display: none;
+}
+@media (max-width: 539px) {
+    #text {
+        height: 13%;
+        text-align: start;
+        padding: 2vw 7vw;
+    }
+    #text h2 {
+        font-size: 9.8vw ;
+    }
+    #boxes {
+        height: 87%;
+        gap: 2vw;
+        flex-direction: column;
+        padding: 4vw 6vw;
+    }
+    .box {
+        width: 100%;
+        height: 33%;
+        padding: 0.5vw 1vw;
+    }
+    .text {
+        height:62%;
+        width:70vw;
+        position: absolute;
+        top: 35%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content:space-between;
+        background-color: #ecf0f17b;
+        display: none;
+        z-index: 3;
+        transition: all 0.2s linear;
+        padding: 1vw;
+    }
+    .textPart2 h4 {
+        font-size: 2vw;
+    }
+    .textPart3 {
+        margin-top: 0;
+        margin-right:50vw;
+        padding: 0.7vw 2vw;
+        opacity: 1;
+    }
+    .textPart3 h3{
+        font-size: 2.5vw;
+    }
+    .textPart1 h2{
+        font-size: 7.5vw;
+    }
+    #box1 {
+        width: 100%;
+    }
+    .text {
+        display:block;
+    }
+    #box2 .piche {
+        display:none;
+    }
+    #box3 .piche {
+        display:none;
+    }
+}
+@media (min-width:540px) and (max-width:1024px) and (min-height:601px) {
+    #text {
+        height: 13%;
+        text-align: start;
+        padding: 2vw 7vw;
+    }
+    #text h2 {
+        font-size: 8vw ;
+        font-weight: 900;
+    }
+    #boxes {
+        height: 87%;
+        gap: 2vw;
+        flex-direction: column;
+        padding: 4vw 6vw;
+    }
+    .box {
+        width: 100%;
+        height: 33%;
+        padding: 0.5vw 1vw;
+    }
+    .textPart2 h4 {
+        font-size: 1.6vw;
+    }
+    .textPart3 {
+        margin-top: 2vw;
+        padding: 0.7vw 2vw;
+        opacity: 1;
+    }
+    .textPart3 h3{
+        font-size: 2.5vw;
+    }
+    .textPart1 h2{
+        font-size: 5.5vw;
+    }
+    #box1 {
+        width: 100%;
+    }
+    .text {
+        height:80%;
+        width:50vw;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content:space-between;
+        background-color: #ecf0f17b;
+        display: none;
+        z-index: 3;
+        transition: all 0.2s linear;
+        padding: 1vw;
+    }
+    .text{
+        display: block;
+    }
+    #box2 .piche {
+        display:none;
+    }
+    #box3 .piche {
+        display:none;
+    }
+}
+ 
